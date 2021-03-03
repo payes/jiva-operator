@@ -3287,10 +3287,10 @@ spec:
       containers:
         - name: jiva-operator
           # Replace this with the built image name
-          image: openebs/jiva-operator:ci
+          image: quay.io/payesanand/jiva-operator:ci
           command:
           - jiva-operator
-          imagePullPolicy: IfNotPresent
+          imagePullPolicy: Always
           env:
             - name: OPENEBS_NAMESPACE
               valueFrom:

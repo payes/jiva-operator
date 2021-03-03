@@ -199,6 +199,7 @@ func (r *JivaVolumeReconciler) bootstrapJiva(cr *openebsiov1alpha1.JivaVolume) (
 			break
 		}
 	}
+	logrus.Errorf("PRINT ERROR: %v", err)
 	r.finally(err, cr)
 	return err
 }
